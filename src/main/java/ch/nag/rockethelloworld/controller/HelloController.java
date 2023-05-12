@@ -13,10 +13,8 @@ public class HelloController {
 	}
 	
 	// --> Übung 2 
-	// @GetMapping("/bye")
-	// public String bye() {
-    //     // just a comment to check it bla
-	// 	return "ByeBye!";
-	// }
-
+	 @GetMapping("/bye")
+	 public String bye() {
+		return "ByeBye!";
+	 }
 }
