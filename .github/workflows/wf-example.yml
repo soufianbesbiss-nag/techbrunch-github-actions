@@ -26,9 +26,11 @@ jobs:
       run: mvn -B package
       
     - name: Copy test results
+      if: always()
       run: mkdir test-results && cp target/*-reports/TEST-*.xml test-results
     
     - name: Publish test results
+      if: always()
       uses: dorny/test-reporter@v1
       with:
         name: Unit Test Results
