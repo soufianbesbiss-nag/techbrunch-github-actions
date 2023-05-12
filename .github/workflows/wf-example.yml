@@ -2,6 +2,10 @@ name: Example Workflow Updated
 
 on: [push]
 
+permissions:
+  contents: write
+  checks: write
+
 jobs:
   build:
     name: Build Application
